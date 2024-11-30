@@ -1,0 +1,80 @@
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+env/
+.venv/
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+
+# PHP
+vendor/
+
+# Ruby
+*.gem
+log/
+tmp/
+*.rbc
+coverage/
+.ruby-version
+
+# IDEs and editors
+.idea/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Logs and debug files
+*.log
+*.bak
+*.swp
+*.out
+*.pid
+*.seed
+
+# Compiled files and binaries
+*.exe
+*.dll
+*.obj
+*.o
+*.so
+*.dylib
+
+# Generated files
+*.min.js
+*.min.css
+*.map
+*.gz
+
+# Images
+*.psd
+*.tiff
+
+# Backup files
+*.bak
+*.tmp
+*.old
+
+# Other
+*.env
+!/.well-known/
