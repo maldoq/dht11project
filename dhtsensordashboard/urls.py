@@ -15,12 +15,16 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import include, path
 from sensorapp import views
+from  authentication import views as vot
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('save-data/', views.save_sensor_data, name='save_data'),
-    path('sensor-graph/', views.sensor_data_graph, name='sensor_graph'),
-    path('sensor-data/update/', views.get_sensor_data, name='get_sensor_data'),
+    path('',vot.login_view, name='login'),
+    path('Home/', views.sensor_data_graph, name='sensor_graph'),
+    path('logout/', views.logout_view, name='logout'),
+    path('led_control/', views.control_led, name='led_control'),
+    path('led_state/', views.led_state, name='led_state'),
 ]
